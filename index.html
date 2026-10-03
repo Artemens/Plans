@@ -3,16 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Мшистая Топь · Арты и заказы</title>
+<title>Мшистая Топь</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Marck+Script&family=Neucha&display=swap" rel="stylesheet">
 
 <style>
-/* ==========================================================
-   БАЗА
-========================================================== */
 * { margin:0; padding:0; box-sizing:border-box; }
 
 :root {
@@ -41,9 +38,6 @@ body {
   position: relative;
 }
 
-/* ==========================================================
-   ПЕРГАМЕНТ
-========================================================== */
 .parchment {
   position: fixed; inset: 0; z-index: 0;
   pointer-events: none;
@@ -75,9 +69,6 @@ body {
     inset 0 0 10px rgba(74,56,38,.45);
 }
 
-/* ==========================================================
-   КУРСОР
-========================================================== */
 .ink-cursor {
   position: fixed;
   width: 22px; height: 22px;
@@ -103,9 +94,6 @@ body {
 }
 a, button, .card { cursor: none; }
 
-/* ==========================================================
-   ФОН-ЭЛЕМЕНТЫ
-========================================================== */
 .spark {
   position: fixed;
   width: 4px; height: 4px;
@@ -156,9 +144,6 @@ a, button, .card { cursor: none; }
   66%     { transform: translate(-40px,20px) scale(.95) rotate(-10deg); }
 }
 
-/* ==========================================================
-   ПРОГРЕСС
-========================================================== */
 .read-progress {
   position: fixed; top: 0; left: 0;
   height: 3px; width: 0%;
@@ -168,9 +153,6 @@ a, button, .card { cursor: none; }
   box-shadow: 0 0 10px rgba(122,31,31,.5);
 }
 
-/* ==========================================================
-   УПРАВЛЕНИЕ
-========================================================== */
 .controls {
   position: fixed; top: 20px; right: 20px;
   z-index: 9990;
@@ -221,9 +203,6 @@ a, button, .card { cursor: none; }
   border-color: var(--crimson);
 }
 
-/* ==========================================================
-   СТРАНИЦА
-========================================================== */
 .page {
   position: relative; z-index: 10;
   max-width: 1150px;
@@ -231,9 +210,6 @@ a, button, .card { cursor: none; }
   padding: 40px 40px 120px;
 }
 
-/* ==========================================================
-   ШАПКА
-========================================================== */
 .header {
   text-align: center;
   padding: 40px 20px 30px;
@@ -313,9 +289,6 @@ a, button, .card { cursor: none; }
 }
 .divider circle { fill: var(--crimson); opacity: .8; }
 
-/* ==========================================================
-   НАВИГАЦИЯ
-========================================================== */
 .nav {
   position: sticky; top: 16px; z-index: 100;
   display: flex; gap: 4px; justify-content: center;
@@ -351,9 +324,6 @@ a, button, .card { cursor: none; }
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 4'%3E%3Cpath d='M2 2 Q 15 0 30 2 T 58 2' stroke='%237a1f1f' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;
 }
 
-/* ==========================================================
-   HERO
-========================================================== */
 .hero-text {
   text-align: center;
   max-width: 720px;
@@ -379,9 +349,6 @@ a, button, .card { cursor: none; }
   font-style: normal;
 }
 
-/* ==========================================================
-   СЕКЦИИ
-========================================================== */
 section { margin: 80px 0; position: relative; scroll-margin-top: 100px; }
 
 .section-head { text-align: center; margin-bottom: 50px; }
@@ -399,9 +366,6 @@ section { margin: 80px 0; position: relative; scroll-margin-top: 100px; }
   display: inline-block;
 }
 
-/* ==========================================================
-   ГАЛЕРЕЯ
-========================================================== */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -455,7 +419,6 @@ section { margin: 80px 0; position: relative; scroll-margin-top: 100px; }
   filter: sepia(.15) saturate(1) contrast(1);
 }
 
-/* ПЕЧАТЬ СКАТА на каждом арте — как в рассказе */
 .card-manta {
   position: absolute;
   right: 12px; bottom: 12px;
@@ -502,9 +465,6 @@ section { margin: 80px 0; position: relative; scroll-margin-top: 100px; }
 }
 .card:hover .card-label { opacity: 1; transform: none; }
 
-/* ==========================================================
-   ПРАЙС
-========================================================== */
 .prices {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -572,9 +532,6 @@ section { margin: 80px 0; position: relative; scroll-margin-top: 100px; }
   font-size: 16px;
 }
 
-/* ==========================================================
-   FAQ
-========================================================== */
 .faq {
   max-width: 780px;
   margin: 0 auto;
@@ -627,9 +584,6 @@ section { margin: 80px 0; position: relative; scroll-margin-top: 100px; }
 }
 .faq-item.open .faq-a { max-height: 400px; padding-top: 14px; }
 
-/* ==========================================================
-   СВЯЗЬ
-========================================================== */
 .contact-box {
   max-width: 620px;
   margin: 0 auto;
@@ -682,9 +636,6 @@ section { margin: 80px 0; position: relative; scroll-margin-top: 100px; }
   box-shadow: 5px 6px 0 rgba(43,30,20,.35);
 }
 
-/* ==========================================================
-   ПОДВАЛ
-========================================================== */
 .footer {
   text-align: center;
   padding: 60px 20px 30px;
@@ -711,9 +662,6 @@ section { margin: 80px 0; position: relative; scroll-margin-top: 100px; }
   line-height: 1.8;
 }
 
-/* ==========================================================
-   ✦ ГЛИТЧ KOTSIGUNE — ОБРЫВКИ ИЗ РАССКАЗА ✦
-========================================================== */
 .kotsigune-layer {
   position: fixed; inset: 0;
   pointer-events: none;
@@ -721,7 +669,6 @@ section { margin: 80px 0; position: relative; scroll-margin-top: 100px; }
   overflow: hidden;
 }
 
-/* имя Kotsigune */
 .kotsigune-text {
   position: absolute;
   font-family: 'Marck Script', cursive;
@@ -747,7 +694,6 @@ section { margin: 80px 0; position: relative; scroll-margin-top: 100px; }
   100% { opacity: 0; transform: translate(0,0) skew(0); }
 }
 
-/* ОБРЫВОК ФРАЗЫ — то, что читал рассказчик */
 .fragment-glitch {
   position: absolute;
   font-family: 'Caveat', cursive;
@@ -773,7 +719,6 @@ section { margin: 80px 0; position: relative; scroll-margin-top: 100px; }
   100% { opacity: 0; transform: translate(0,-18px) skew(0); filter: blur(6px); }
 }
 
-/* глитч-прямоугольники */
 .glitch-block {
   position: absolute;
   pointer-events: none;
@@ -827,7 +772,6 @@ body.invert-flash {
   100% { top: 100vh; opacity: 0; }
 }
 
-/* шёпот — фразы из рассказа на краю экрана */
 .whisper {
   position: fixed;
   bottom: 30px;
@@ -849,7 +793,6 @@ body.invert-flash {
   100% { opacity: 0; transform: translateY(-6px); }
 }
 
-/* пробой */
 .breach {
   position: fixed; inset: 0;
   z-index: 9993;
@@ -884,7 +827,6 @@ body.invert-flash {
   66%     { transform: translate(5px,-3px) skew(3deg); }
 }
 
-/* отключение */
 body.no-glitch .kotsigune-layer,
 body.no-glitch .kotsigune-text,
 body.no-glitch .fragment-glitch,
@@ -895,9 +837,6 @@ body.no-glitch .breach {
   display: none !important;
 }
 
-/* ==========================================================
-   АДАПТИВ
-========================================================== */
 @media (max-width: 720px) {
   .page { padding: 20px 16px 80px; }
   .nav { top: 8px; padding: 10px 12px; gap: 0; }
@@ -914,7 +853,6 @@ body.no-glitch .breach {
 </head>
 <body>
 
-<!-- SVG-фильтры -->
 <svg width="0" height="0" style="position:absolute">
   <defs>
     <filter id="rough">
@@ -924,7 +862,6 @@ body.no-glitch .breach {
   </defs>
 </svg>
 
-<!-- ФОН -->
 <div class="parchment"></div>
 <div class="parchment-edge"></div>
 <div class="blob" style="width:300px;height:300px;background:radial-gradient(circle,#3d4f2e,transparent 70%);top:10%;left:-60px;"></div>
@@ -933,7 +870,6 @@ body.no-glitch .breach {
 
 <div class="read-progress" id="readProgress"></div>
 
-<!-- УПРАВЛЕНИЕ -->
 <div class="controls">
   <button class="ctrl-btn warning" id="glitchToggle" title="Глитчи">✕</button>
 </div>
@@ -944,7 +880,6 @@ body.no-glitch .breach {
 
 <div class="page">
 
-  <!-- ШАПКА -->
   <header class="header">
     <svg class="seal-svg" viewBox="0 0 200 140">
       <circle class="halo" cx="100" cy="70" r="60"/>
@@ -970,7 +905,6 @@ body.no-glitch .breach {
     </svg>
   </header>
 
-  <!-- НАВИГАЦИЯ -->
   <nav class="nav">
     <button class="tab active" data-target="gallery">Галерея</button>
     <button class="tab" data-target="price">Прайс</button>
@@ -978,12 +912,10 @@ body.no-glitch .breach {
     <button class="tab" data-target="contact">Связь</button>
   </nav>
 
-  <!-- ВСТУПЛЕНИЕ -->
   <p class="hero-text">
     <span class="cap">П</span>ривет. Здесь живут мои иллюстрации — фурри, яой, мистические сцены. Каждый арт — маленькая история из глубины. Если что-то захочешь заказать, пиши в тг, обсудим.
   </p>
 
-  <!-- ГАЛЕРЕЯ -->
   <section id="gallery">
     <div class="section-head">
       <div class="section-eyebrow">~ из альбомов ~</div>
@@ -992,7 +924,6 @@ body.no-glitch .breach {
     <div class="gallery" id="galleryGrid"></div>
   </section>
 
-  <!-- ПРАЙС -->
   <section id="price">
     <div class="section-head">
       <div class="section-eyebrow">~ цена мастерства ~</div>
@@ -1001,45 +932,44 @@ body.no-glitch .breach {
 
     <div class="prices">
       <div class="price">
-        <h3>Скетч</h3>
-        <div class="cost">1 500 ₽ <small>/ $15</small></div>
+        <h3>Error 400</h3>
+        <div class="cost">Bad Request <small>/ invalid</small></div>
         <ul>
-          <li>Набросок, чёрно-белый</li>
-          <li>Один персонаж</li>
-          <li>2–3 дня</li>
+          <li>Null field</li>
+          <li>Unknown reference</li>
+          <li>0 days</li>
         </ul>
       </div>
       <div class="price">
-        <h3>Лайн + цвет</h3>
-        <div class="cost">3 500 ₽ <small>/ $35</small></div>
+        <h3>Error 403</h3>
+        <div class="cost">Forbidden <small>/ denied</small></div>
         <ul>
-          <li>Чистая линия</li>
-          <li>Плоский цвет</li>
-          <li>5–7 дней</li>
+          <li>Access blocked</li>
+          <li>Field empty</li>
+          <li>—</li>
         </ul>
       </div>
       <div class="price">
-        <h3>Полный рендер</h3>
-        <div class="cost">7 000 ₽ <small>/ $70</small></div>
+        <h3>Error 404</h3>
+        <div class="cost">Not Found <small>/ missing</small></div>
         <ul>
-          <li>Свет, тени, фон</li>
-          <li>Две правки</li>
-          <li>10–14 дней</li>
+          <li>File corrupted</li>
+          <li>Link broken</li>
+          <li>—</li>
         </ul>
       </div>
       <div class="price">
-        <h3>NSFW / яой</h3>
-        <div class="cost">+50% <small>к базе</small></div>
+        <h3>Error 500</h3>
+        <div class="cost">Internal <small>/ failure</small></div>
         <ul>
-          <li>Откровенные сцены</li>
-          <li>2+ персонажа</li>
-          <li>Строго 18+</li>
+          <li>Unknown exception</li>
+          <li>Data lost</li>
+          <li>Contact admin</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
   <section id="faq">
     <div class="section-head">
       <div class="section-eyebrow">~ шёпот у очага ~</div>
@@ -1048,29 +978,28 @@ body.no-glitch .breach {
 
     <div class="faq">
       <div class="faq-item">
-        <button class="faq-q">Рисуешь ли ты NSFW? <span class="plus">+</span></button>
-        <div class="faq-a">Да, для совершеннолетних. Все персонажи — 18+. Обсуждаем границы и референсы до начала работы.</div>
+        <button class="faq-q">Error: undefined <span class="plus">+</span></button>
+        <div class="faq-a">Response not loaded. Try again later.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Какие сроки? <span class="plus">+</span></button>
-        <div class="faq-a">От 2 дней (скетч) до 2–3 недель (сложная иллюстрация).</div>
+        <button class="faq-q">Error: null <span class="plus">+</span></button>
+        <div class="faq-a">Field is empty. No data to display.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Сколько правок? <span class="plus">+</span></button>
-        <div class="faq-a">1–2 раунда на этапе наброска. Правки после покраски — за доплату.</div>
+        <button class="faq-q">Error: NaN <span class="plus">+</span></button>
+        <div class="faq-a">Invalid value. Cannot compute.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Как оплата? <span class="plus">+</span></button>
-        <div class="faq-a">50% предоплата, 50% после финала. Boosty, карта, крипта.</div>
+        <button class="faq-q">Error: timeout <span class="plus">+</span></button>
+        <div class="faq-a">Connection lost. Server not responding.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Можно коммерчески? <span class="plus">+</span></button>
-        <div class="faq-a">Личное — да. Коммерческое — по отдельному тарифу.</div>
+        <button class="faq-q">Error: ??? <span class="plus">+</span></button>
+        <div class="faq-a">Unknown error. No reference.</div>
       </div>
     </div>
   </section>
 
-  <!-- СВЯЗЬ -->
   <section id="contact">
     <div class="section-head">
       <div class="section-eyebrow">~ призыв ~</div>
@@ -1078,12 +1007,11 @@ body.no-glitch .breach {
     </div>
 
     <div class="contact-box">
-      <p class="contact-text">Все заказы и вопросы — через Telegram. Отвечаю в течение дня.</p>
-      <a class="btn" href="https://t.me/" target="_blank" rel="noopener">✈ Написать в Telegram</a>
+      <p class="contact-text">Error: connection refused. Retry via Telegram.</p>
+      <a class="btn" href="https://t.me/" target="_blank" rel="noopener">✈ Error: cannot open</a>
     </div>
   </section>
 
-  <!-- ПОДВАЛ -->
   <footer class="footer">
     <svg class="divider" viewBox="0 0 260 30" style="margin-bottom:24px;">
       <path d="M10 15 L80 15"/>
@@ -1092,23 +1020,20 @@ body.no-glitch .breach {
       <circle cx="130" cy="15" r="3"/>
     </svg>
     <div class="socials">
-      <a href="#">Twitter</a>
-      <a href="#">Telegram</a>
-      <a href="#">Boosty</a>
-      <a href="#">Discord</a>
+      <a href="#">Error 1</a>
+      <a href="#">Error 2</a>
+      <a href="#">Error 3</a>
+      <a href="#">Error 4</a>
     </div>
     <div class="sign">
-      © 2026 · Мшистая Топь<br>
-      Все работы принадлежат художнице
+      © 2026 · undefined<br>
+      Data corrupted
     </div>
   </footer>
 
 </div>
 
 <script>
-/* ==========================================================
-   КУРСОР
-========================================================== */
 const cursor = document.getElementById('inkCursor');
 let trailIndex = 0;
 document.addEventListener('mousemove', e => {
@@ -1134,9 +1059,6 @@ document.querySelectorAll('a, button, .card, .faq-q').forEach(el => {
   el.addEventListener('mouseleave', () => cursor.classList.remove('big'));
 });
 
-/* ==========================================================
-   ИСКРЫ И КАПЛИ
-========================================================== */
 (function makeSparks() {
   for (let i = 0; i < 24; i++) {
     const s = document.createElement('div');
@@ -1162,9 +1084,6 @@ document.querySelectorAll('a, button, .card, .faq-q').forEach(el => {
   }
 })();
 
-/* ==========================================================
-   ПРОГРЕСС + ВВЕРХ
-========================================================== */
 const progress = document.getElementById('readProgress');
 const toTop = document.getElementById('toTop');
 window.addEventListener('scroll', () => {
@@ -1175,9 +1094,6 @@ window.addEventListener('scroll', () => {
 });
 toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-/* ==========================================================
-   НАВИГАЦИЯ
-========================================================== */
 const tabs = document.querySelectorAll('.tab');
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
@@ -1200,19 +1116,16 @@ const scrollObs = new IntersectionObserver(entries => {
   if (el) scrollObs.observe(el);
 });
 
-/* ==========================================================
-   ГАЛЕРЕЯ + ПЕЧАТЬ СКАТА
-========================================================== */
 const works = [
-  { title: 'Тёмная вода',     caption: 'фурри · sfw',  seed: 'mossA' },
-  { title: 'Тихий берег',     caption: 'фурри · sfw',  seed: 'mossB' },
-  { title: 'Свет в тине',     caption: 'фурри · sfw',  seed: 'mossC' },
-  { title: 'Сплетение',       caption: 'яой · sfw',    seed: 'mossD' },
-  { title: 'Глубина',         caption: 'фурри · sfw',  seed: 'mossE' },
-  { title: 'Сакральный узел', caption: 'яой · 18+',    seed: 'mossF' },
-  { title: 'Хранитель топи',  caption: 'фурри · sfw',  seed: 'mossG' },
-  { title: 'Прилив',          caption: 'яой · 18+',    seed: 'mossH' },
-  { title: 'Забытая тропа',   caption: 'фурри · sfw',  seed: 'mossI' },
+  { title: 'Error 404',  caption: 'file not found',    seed: 'mossA' },
+  { title: 'Error 500',  caption: 'internal failure',  seed: 'mossB' },
+  { title: 'Error 403',  caption: 'access denied',     seed: 'mossC' },
+  { title: 'Error 400',  caption: 'bad request',       seed: 'mossD' },
+  { title: 'Error 401',  caption: 'unauthorized',      seed: 'mossE' },
+  { title: 'Error 502',  caption: 'bad gateway',       seed: 'mossF' },
+  { title: 'Error 503',  caption: 'service unavailable', seed: 'mossG' },
+  { title: 'Error 504',  caption: 'gateway timeout',   seed: 'mossH' },
+  { title: 'Error ???',  caption: 'unknown',           seed: 'mossI' },
 ];
 
 const MANTA_SVG = `
@@ -1246,9 +1159,6 @@ works.forEach((w, i) => {
   });
 });
 
-/* ==========================================================
-   FAQ
-========================================================== */
 document.querySelectorAll('.faq-q').forEach(q => {
   q.addEventListener('click', () => {
     const item = q.parentElement;
@@ -1258,11 +1168,6 @@ document.querySelectorAll('.faq-q').forEach(q => {
   });
 });
 
-/* ==========================================================
-   ✦ ГЛИТЧ KOTSIGUNE — ПОДСКАЗКИ ИЗ РАССКАЗА ✦
-========================================================== */
-
-/* ФРАЗЫ-ОБРЫВКИ (в порядке из рассказа) */
 const FRAGMENTS = [
   'форма, которую принимает',
   'не имеет формы',
@@ -1300,7 +1205,6 @@ const FRAGMENTS = [
   'Ты считаешь. Не считай вслух.',
 ];
 
-/* ШЁПОТЫ — короткие, из рассказа */
 const WHISPERS = [
   'ты считаешь',
   'не считай вслух',
@@ -1318,7 +1222,6 @@ const kotsLayer = document.getElementById('kotsLayer');
 let glitchEnabled = true;
 let glitchInterval = null;
 
-/* — имя Kotsigune — */
 function spawnKotsigune() {
   if (!glitchEnabled) return;
   const t = document.createElement('div');
@@ -1333,7 +1236,6 @@ function spawnKotsigune() {
   setTimeout(() => t.remove(), 2000);
 }
 
-/* — обрывок фразы — */
 function spawnFragment() {
   if (!glitchEnabled) return;
   const t = document.createElement('div');
@@ -1348,7 +1250,6 @@ function spawnFragment() {
   setTimeout(() => t.remove(), 2800);
 }
 
-/* — глитч-прямоугольники — */
 function spawnBlocks(count = 3) {
   if (!glitchEnabled) return;
   for (let i = 0; i < count; i++) {
@@ -1371,7 +1272,6 @@ function spawnBlocks(count = 3) {
   }
 }
 
-/* — скан-линия — */
 function spawnScanline() {
   if (!glitchEnabled) return;
   const s = document.createElement('div');
@@ -1380,21 +1280,18 @@ function spawnScanline() {
   setTimeout(() => s.remove(), 1000);
 }
 
-/* — тряска сайта — */
 function shakeSite() {
   if (!glitchEnabled) return;
   document.body.classList.add('glitching');
   setTimeout(() => document.body.classList.remove('glitching'), 320);
 }
 
-/* — инверсия — */
 function invertFlash() {
   if (!glitchEnabled) return;
   document.body.classList.add('invert-flash');
   setTimeout(() => document.body.classList.remove('invert-flash'), 420);
 }
 
-/* — шёпот — */
 function spawnWhisper() {
   if (!glitchEnabled) return;
   const w = document.createElement('div');
@@ -1406,7 +1303,6 @@ function spawnWhisper() {
   setTimeout(() => w.remove(), 3000);
 }
 
-/* — пробой — */
 function breach() {
   if (!glitchEnabled) return;
   const b = document.createElement('div');
@@ -1416,7 +1312,6 @@ function breach() {
   setTimeout(() => b.remove(), 1500);
 }
 
-/* — короткий шум через Web Audio — */
 function glitchSound(intensity = 0.4) {
   if (!glitchEnabled) return;
   if (!window.__glitchAudio) {
@@ -1443,7 +1338,6 @@ function glitchSound(intensity = 0.4) {
   src.start();
 }
 
-/* — ПЛАНИРОВЩИК: серии глитчей с паузами — */
 function scheduleGlitchBurst() {
   if (!glitchEnabled) return;
   const count = 2 + Math.floor(Math.random() * 4);
@@ -1451,7 +1345,7 @@ function scheduleGlitchBurst() {
     setTimeout(() => {
       if (!glitchEnabled) return;
       const r = Math.random();
-      if      (r < 0.35) spawnFragment();     // чаще всего — обрывки фраз
+      if      (r < 0.35) spawnFragment();
       else if (r < 0.50) spawnKotsigune();
       else if (r < 0.68) spawnBlocks(1 + Math.floor(Math.random() * 3));
       else if (r < 0.80) spawnScanline();
@@ -1467,7 +1361,6 @@ function scheduleGlitchBurst() {
 }
 scheduleGlitchBurst();
 
-/* — тумблер — */
 const glitchToggle = document.getElementById('glitchToggle');
 glitchToggle.addEventListener('click', () => {
   glitchEnabled = !glitchEnabled;
@@ -1481,7 +1374,6 @@ glitchToggle.addEventListener('click', () => {
   }
 });
 
-/* — первое касание через 6 секунд — */
 window.addEventListener('load', () => {
   setTimeout(() => {
     if (glitchEnabled) {
@@ -1492,11 +1384,6 @@ window.addEventListener('load', () => {
   }, 6000);
 });
 
-/* — привет в консоли — */
-console.log(
-  '%c✦ Мшистая Топь ✦',
-  'font-family:Caveat,cursive;font-size:26px;color:#3d4f2e;'
-);
 console.log(
   '%cKOTSIGUNE',
   'font-family:serif;font-size:38px;color:#8b1a3a;text-shadow:0 0 20px #8b1a3a;letter-spacing:10px;'
